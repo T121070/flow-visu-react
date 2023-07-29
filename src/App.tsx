@@ -58,11 +58,16 @@ const sampleData = {
 }
 
 function App() {
+  const index2label = ["デザイン", "制作", "3Dプリンター"]
+
+  const StepInfoArray = sampleData["steps"].map((elm, index) => {
+    <StepInfo boothData={elm["boothes"]} stepLabel={index2label[index]} />
+  })
 
   return (
     <>
       <MyHeader />
-      <StepInfo />
+      { StepInfoArray }
     </>
   )
 }
