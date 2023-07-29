@@ -7,7 +7,7 @@ export function StepInfo() {
       <Box sx={{ flexGrow: 1, px: "20px", pt: "50px" }}>
         <Typography variant="h6">デザイン</Typography>
         <Divider sx={{ borderBottomWidth: 3 , borderColor: "black"  }} />
-        <Stack direction="row">
+        <Stack direction="row" spacing={3} sx={{p: "20px"}}>
           <BoothInfo />
           <BoothInfo />
         </Stack>
